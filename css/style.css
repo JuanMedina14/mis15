@@ -74,12 +74,15 @@ body {
   border: 2px solid #f52a45;
   color: #1d1c1b;
 }
+
 .boton--rose:hover {
   color: #fff;
 }
+
 .boton--rose:hover:after {
   height: 100%;
 }
+
 .boton--rose:after {
   content: "";
   position: absolute;
@@ -91,6 +94,7 @@ body {
   width: 100%;
   background: #f52a45;
 }
+
 .btn {
   text-decoration: none;
   color: #ed5a51;
@@ -259,12 +263,15 @@ h3 {
   border: 2px solid #d88a27;
   color: #d88a27;
 }
+
 .btn3:hover {
   color: #fff;
 }
+
 .btn3:hover:after {
   height: 100%;
 }
+
 .btn3:after {
   content: "";
   position: absolute;
@@ -278,13 +285,13 @@ h3 {
 }
 
 /* ::::::::::::::::::::: GALERIA:::::::::::::: */
-.contenedorDelSlider{
-    background-color: #ed5a51;
-    display: flex;
-    
+.contenedorDelSlider {
+  background-color: #ed5a51;
+  display: flex;
+
 }
 
-.contenedorDelSlider__item1{
+.contenedorDelSlider__item1 {
   color: #fff;
   width: 100%;
   height: 350px;
@@ -294,28 +301,29 @@ h3 {
   text-align: center;
 }
 
-.contenedorDelSlider__texto{
+.contenedorDelSlider__texto {
   color: #ffffff;
   font-size: 3rem;
 }
-.contenedorDelSlider__item1 p{
+
+.contenedorDelSlider__item1 p {
   font-size: 1.2rem;
 }
 
 
-.slider1{
-  
+.slider1 {
+
   display: flex;
   align-items: center;
-  justify-content: center; 
-  padding-top: 20px; 
+  justify-content: center;
+  padding-top: 20px;
   height: 80vh;
 }
 
 
 .container-carousel {
   position: relative;
-  width:80%;
+  width: 80%;
   height: 400px;
   background-color: #110e0e;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
@@ -342,7 +350,7 @@ h3 {
   height: 100%;
   object-fit: fill;
   border-radius: 5px;
-  
+
 }
 
 .btn-left,
@@ -356,14 +364,14 @@ h3 {
   font-weight: 900;
   cursor: pointer;
   color: #ffffff81;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   transition: .5s ease;
   user-select: none;
 }
 
 .btn-left:hover,
 .btn-right:hover {
-  
+
   color: #fff;
 }
 
@@ -480,7 +488,7 @@ h3 {
 /* ::::::::::::::::::::: Contacto  :::::::::::::: */
 
 
-.formulario{
+.formulario {
   background-color: #afafaf;
   display: flex;
   flex-direction: column;
@@ -490,16 +498,16 @@ h3 {
 }
 
 
-.formulario__img{
+.formulario__img {
   width: 6%;
 }
 
-.formulario__titulo{
+.formulario__titulo {
   color: #fff;
   font-size: 2rem;
 }
 
-.formulario__texto{
+.formulario__texto {
   color: #fff;
   font-size: 1.5rem;
 }
@@ -609,41 +617,41 @@ form textarea:focus {
 /* ::::::::::::::::::::: Responsive :::::::::::::: */
 
 
-@media screen and (max-width: 768px){
-  .slider1{
+@media screen and (max-width: 768px) {
+  .slider1 {
     padding: 0px;
     margin-bottom: 30px;
-    
+
   }
 
-  .container-carousel{
+  .container-carousel {
     width: 100%;
     height: 500px;
-    
+
   }
 
-  .contenedorDelSlider{
+  .contenedorDelSlider {
     flex-direction: column;
-    height:800px;
+    height: 800px;
     padding: 0%;
   }
 
-  .contenedorDelSlider__item1 p{
+  .contenedorDelSlider__item1 p {
     text-align: center;
-   
+
   }
 
-  .contenedorDelSlider__item1{
+  .contenedorDelSlider__item1 {
     width: 90%;
     margin-left: auto;
   }
 
 
-  .ceremonia{
+  .ceremonia {
     height: 50%;
   }
 
-  .ceremonia__item1{
+  .ceremonia__item1 {
     height: 370px;
   }
 }
@@ -662,6 +670,7 @@ form textarea:focus {
     top: 10%;
     font-size: 2rem;
   }
+
   .cabecera__fecha {
     font-size: 2rem;
   }
@@ -676,24 +685,24 @@ form textarea:focus {
   }
 
 
-  main{
+  main {
     height: 30vh;
   }
 
 
-  h2{
+  h2 {
     font-size: 2rem;
     font-weight: 400;
   }
 
-  .back{
+  .back {
     font-size: 1.5rem;
   }
 
 
-   /* ::::::::::::::::::::: Responsive CEREMONIA y FIESTA:::::::::::::: */
+  /* ::::::::::::::::::::: Responsive CEREMONIA y FIESTA:::::::::::::: */
 
-  .ceremonia{
+  .ceremonia {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -702,93 +711,93 @@ form textarea:focus {
     row-gap: 3%;
   }
 
-  .ceremonia__item1{
+  .ceremonia__item1 {
     height: 300px;
   }
 
-  .ceremonia__text{
+  .ceremonia__text {
     padding: 0;
     width: 150%;
   }
 
-  .ceremonia__icono{
+  .ceremonia__icono {
     width: 50%;
   }
 
-  .btn3{
+  .btn3 {
     display: none;
   }
 
 
   /* ::::::::::::::::::::: Responsive SLIDER:::::::::::::: */
 
-  .slider1{
+  .slider1 {
     padding: 0px;
     margin-bottom: 30px;
   }
 
-  .container-carousel{
+  .container-carousel {
     width: 100%;
   }
 
-  .contenedorDelSlider{
+  .contenedorDelSlider {
     flex-direction: column;
-    height:800px;
+    height: 800px;
     padding: 0%;
   }
 
-  .contenedorDelSlider__item1 p{
+  .contenedorDelSlider__item1 p {
     text-align: center;
-   
+
   }
 
-  .contenedorDelSlider__item1{
+  .contenedorDelSlider__item1 {
     width: 90%;
     margin-left: auto;
   }
-/* ::::::::::::::::::::: FIN SLIDER:::::::::::::: */
 
-  .regalos__texto{
+  /* ::::::::::::::::::::: FIN SLIDER:::::::::::::: */
+
+  .regalos__texto {
     text-align: center;
   }
 
 
-  .regalos__img{
+  .regalos__img {
     width: 40%;
   }
 
-  .footer{
+  .footer {
     height: 80px;
   }
 
 
-  .formulario{
+  .formulario {
     height: 400px;
   }
-  
-  .formulario__titulo{
+
+  .formulario__titulo {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 15px;
   }
-  
-  .formulario__img{
+
+  .formulario__img {
     width: 20%;
   }
-  
-  .formulario__texto{
+
+  .formulario__texto {
     text-align: center;
     padding: 5px 10px;
   }
 }
 
-@media screen and (max-width: 500px){
-  .container-carousel{
+@media screen and (max-width: 500px) {
+  .container-carousel {
     height: 400px;
   }
 
-  .ceremonia__item1{
+  .ceremonia__item1 {
     height: 370px;
   }
 }
-
