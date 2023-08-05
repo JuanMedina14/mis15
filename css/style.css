@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------------------CABECERA------------------------------- */
+
+.cabecera {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(to top, rgba(32, 12, 12, 0.7), rgba(105, 213, 255, 0.2)),
+    url(../img/portada.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.cabecera__titulo {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 8rem;
+  top: 50%;
+  font-family: "Dancing Script", cursive;
+}
+
+.cabecera__texto {
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.cabecera__fecha {
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  top: 70%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* --------------------BOTON PRIMERO------------------------------- */
+
+.boton--rose {
+  margin-top: 22em;
+  font-size: 1.5rem;
+  min-width: 60px;
+  color: #ffba39;
+  padding: 0px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #f52a45;
+  color: #1d1c1b;
+}
+.boton--rose:hover {
+  color: #fff;
+}
+.boton--rose:hover:after {
+  height: 100%;
+}
+.boton--rose:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #f52a45;
+}
+.btn {
+  text-decoration: none;
+  color: #ed5a51;
+}
+
+/* /////////////////CUENTA REGRESIVA::::::::::::::::::::::::::: */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: #272727;
+  text-align: center;
+  border-bottom: 3px solid #f52a45;
+}
+
+
+/* h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ed5a51;
+} */
+
+.back {
+  margin: 15px 0px;
+  color: #a49fa1;
+  font-size: 1.3rem;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+
+
+.countdown div p {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.countdown div span {
+  color: #a49fa1;
+  font-weight: 300;
+}
+
+/* :::::::::::::::::::::BOTON CEREMONIA:::::::::::::: */
+
+/* .btn2 {
+  margin-top: 80%;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c757d;
+}
+.btn2:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.btn2:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.btn2:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 37px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+} */
+
+/* ::::::::::::::::::::: CEREMONIA:::::::::::::: */
+
+.ceremonia {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 0px 20px;
+}
+
+.ceremonia__item1,
+.ceremonia__item2 {
+  width: 45%;
+  height: 400px;
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ceremonia__icono {
+  width: 40%;
+  margin-bottom: -25px;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  color: #d88a27;
+  margin-bottom: 20px;
+}
+
+.ceremonia__text {
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+
+.ceremonia__mapa {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: #d88a27 1px solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(133, 133, 133);
+  transition: 0.5s;
+}
+
+.ceremonia__mapa:hover {
+  background-color: #d88a27;
+  color: #fff;
+  box-shadow: none;
+}
+
+.btn3 {
+  min-width: 50px;
+  height: 40px;
+  color: #fff;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 290%;
+  right: 50%;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #d88a27;
+  color: #d88a27;
+}
+.btn3:hover {
+  color: #fff;
+}
+.btn3:hover:after {
+  height: 100%;
+}
+.btn3:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: #d88a27;
+}
+
+/* ::::::::::::::::::::: GALERIA:::::::::::::: */
+.contenedorDelSlider{
+    background-color: #ed5a51;
+    display: flex;
+    
+}
+
+.contenedorDelSlider__item1{
+  color: #fff;
+  width: 100%;
+  height: 350px;
+  margin: 4% auto;
+  margin-left: 10%;
+  padding: 2%;
+  text-align: center;
+}
+
+.contenedorDelSlider__texto{
+  color: #ffffff;
+  font-size: 3rem;
+}
+.contenedorDelSlider__item1 p{
+  font-size: 1.2rem;
+}
+
+
+.slider1{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding-top: 20px; 
+  height: 80vh;
+}
+
+
+.container-carousel {
+  position: relative;
+  width:80%;
+  height: 400px;
+  background-color: #110e0e;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+.carruseles {
+  width: 1000%;
+  height: 100%;
+  display: flex;
+  object-fit: cover;
+
+}
+
+.slider-section {
+  width: calc(100% / 6);
+  height: 100%;
+}
+
+.slider-section img {
+  width: 70%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+  
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+
+
+
+/* ::::::::::::::::::::: REGALOS:::::::::::::: */
+
+.regalos {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.regalos__detalle {
+  width: 50%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.regalos__img {
+  width: 20%;
+}
+
+.regalos__texto {
+  color: #d88a27;
+  font-size: 1.3rem;
+}
+
+.regalos__boton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: #d88a27 1px solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(133, 133, 133);
+  transition: 0.5s;
+}
+
+.regalos__boton:hover {
+  background-color: #d88a27;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* ::::::::::::::::::::: MODAL  :::::::::::::: */
+
+.modal-container {
+  position: fixed;
+  background-color: rgba(221, 193, 144, 0.8);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.modal-content {
+  width: 400px;
+  height: auto;
+  padding: 1px;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.modal-content h4 {
+  font-size: 1.5rem;
+  margin: 20px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+}
+
+.datos {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.close {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  margin: 30px auto 10px;
+  border-radius: 5px;
+  background-color: #313131;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close:hover {
+  background-color: hsl(0, 0%, 35%);
+}
+
+/* ::::::::::::::::::::: Contacto  :::::::::::::: */
+
+
+.formulario{
+  background-color: #afafaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+
+.formulario__img{
+  width: 6%;
+}
+
+.formulario__titulo{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.formulario__texto{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+
+
+/* ::::::::::::::::::::: FORMULARIO PARA VALIDAR CON PHP  :::::::::::::: */
+
+/* h5 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contacto {
+  background-color: #ddc190;
+  opacity: 0.9;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.contacto h5 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+
+.contacto form {
+  max-width: 40%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  padding: 10px 5px;
+  outline: 0;
+  color: #1c5826;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #666;
+  box-shadow: inset 1px 1px 1px #666;
+}
+
+.mensaje,
+.invitados,
+.cena,
+.nombre {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.boton-formulario .boton-saber-mas {
+  display: block;
+  border: 1px solid #5e5e5e;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  border-radius: 5px;
+  width: 40%;
+  margin: 10px auto;
+  padding: 5px 2px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.boton-formulario .boton-saber-mas:hover {
+  background-color: #444444;
+  color: #fff;
+} */
+
+/* ::::::::::::::::::::: Footer  :::::::::::::: */
+
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* ::::::::::::::::::::: Responsive :::::::::::::: */
+
+
+@media screen and (max-width: 768px){
+  .slider1{
+    padding: 0px;
+    margin-bottom: 30px;
+    
+  }
+
+  .container-carousel{
+    width: 100%;
+    height: 500px;
+    
+  }
+
+  .contenedorDelSlider{
+    flex-direction: column;
+    height:800px;
+    padding: 0%;
+  }
+
+  .contenedorDelSlider__item1 p{
+    text-align: center;
+   
+  }
+
+  .contenedorDelSlider__item1{
+    width: 90%;
+    margin-left: auto;
+  }
+
+
+  .ceremonia{
+    height: 50%;
+  }
+
+  .ceremonia__item1{
+    height: 370px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  .cabecera__titulo {
+    font-size: 4.5rem;
+    text-align: center;
+    top: 30%;
+  }
+
+  .cabecera__texto {
+    top: 10%;
+    font-size: 2rem;
+  }
+  .cabecera__fecha {
+    font-size: 2rem;
+  }
+
+  body {
+    background: linear-gradient(to top, rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.7)),
+      url(../img/portada.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  }
+
+
+  main{
+    height: 30vh;
+  }
+
+
+  h2{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .back{
+    font-size: 1.5rem;
+  }
+
+
+   /* ::::::::::::::::::::: Responsive CEREMONIA y FIESTA:::::::::::::: */
+
+  .ceremonia{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    height: 450px;
+    row-gap: 3%;
+  }
+
+  .ceremonia__item1{
+    height: 300px;
+  }
+
+  .ceremonia__text{
+    padding: 0;
+    width: 150%;
+  }
+
+  .ceremonia__icono{
+    width: 50%;
+  }
+
+  .btn3{
+    display: none;
+  }
+
+
+  /* ::::::::::::::::::::: Responsive SLIDER:::::::::::::: */
+
+  .slider1{
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+
+  .container-carousel{
+    width: 100%;
+  }
+
+  .contenedorDelSlider{
+    flex-direction: column;
+    height:800px;
+    padding: 0%;
+  }
+
+  .contenedorDelSlider__item1 p{
+    text-align: center;
+   
+  }
+
+  .contenedorDelSlider__item1{
+    width: 90%;
+    margin-left: auto;
+  }
+/* ::::::::::::::::::::: FIN SLIDER:::::::::::::: */
+
+  .regalos__texto{
+    text-align: center;
+  }
+
+
+  .regalos__img{
+    width: 40%;
+  }
+
+  .footer{
+    height: 80px;
+  }
+
+
+  .formulario{
+    height: 400px;
+  }
+  
+  .formulario__titulo{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .formulario__img{
+    width: 20%;
+  }
+  
+  .formulario__texto{
+    text-align: center;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container-carousel{
+    height: 400px;
+  }
+
+  .ceremonia__item1{
+    height: 370px;
+  }
+}
+

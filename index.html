@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15_AÑOS</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- CDN fontawesome----------------------------------------------------- -->
+  <script src="https://kit.fontawesome.com/f1e1a05e58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="cabecera">
+    <img class="cabecera__foto">
+    <h1 class="cabecera__titulo">Elena</h1>
+    <!-- <p class="cabecera__texto">Juan y Nati</p> -->
+    <p class="cabecera__fecha">MIS 15 AÑOS</p>
+    <a href="#1" class="btn"><button class="boton--rose">V</button></a>
+  </section>
+
+
+  <!-- /* /////////////////CUENTA REGRESIVA::::::::::::::::::::::::::: */ -->
+
+
+  <main id="1">
+    <!-- <h2>Cada vez Falta menos...</h2> -->
+    <p class="back">Faltan...</p>
+    <div class="countdown">
+      <div>
+        <p id="days">09</p>
+        <span>días</span>
+      </div>
+      <div>
+        <p id="hours">23</p>
+        <span>horas</span>
+      </div>
+      <div>
+        <p id="min">50</p>
+        <span>minutos</span>
+      </div>
+      <div>
+        <p id="sec">50</p>
+        <span>segundos</span>
+      </div>
+    </div>
+    <!-- <a href="#2"><button class="btn2">Ceremonia</button></a> -->
+  </main>
+
+  <!-- /* ///////////////// FIN CUENTA REGRESIVA::::::::::::::::::::::::::: */ -->
+
+
+
+
+  <!-- /* ///////////////// CEREMONIA ::::::::::::::::::::::::::: */ -->
+
+  <section class="ceremonia" id="2">
+    <div class="ceremonia__item1">
+      <img src="./img/inono2.png" alt="ceremonia" class="ceremonia__icono">
+      <h3>Fiesta</h3>
+      <p class="ceremonia__text">¡Te espero el Sábado 12 de Octubre de 22:00 a 05:00 hs para festejar este gran momento !
+        Fantasy Fiestas Ugarte (CABA)
+        <br>Clickeá en el botón de abajo y encontrá las indicaciones para llegar, ¡nos vemos!😉
+        </p>
+      <a href="https://goo.gl/maps/Gs5sZ7XxE3jG9boV7" target="_blank">
+        <button class="ceremonia__mapa"> Como llegar</button></a>
+    </div>
+
+  </section>
+
+  <!-- /* ///////////////// FIN CEREMONIA ::::::::::::::::::::::::::: */ -->
+
+
+
+  <!-- /* ///////////////// Carrousel ::::::::::::::::::::::::::: */ -->
+  <div class="contenedorDelSlider">
+    <div class="contenedorDelSlider__item1">
+      <h3 class="contenedorDelSlider__texto">Mis Quince</h3>
+      <p>
+        Cada día sea un sueño que se pueda tocar. Cada día sea un amor que se pueda sentir. Cada día sea una razón para vivir.<br><br>
+        Para que sea una gran fiesta tiene que haber grandes amigos con muy buenos momentos compartidos. Mi gran fiesta necesita de vos!
+      </p>
+    </div>
+    <div class="slider1">
+      <div class="container-carousel">
+        <div class="carruseles" id="slider">
+          <section class="slider-section">
+            <img src="img/1a.jpg">
+          </section>
+          <section class="slider-section">
+            <img src="img/2a.jpg">
+          </section>
+          <section class="slider-section">
+            <img src="img/3a.jpg">
+          </section>
+          <section class="slider-section">
+            <img src="img/4a.jpg">
+          </section>
+          <section class="slider-section">
+            <img src="img/5a.jpg">
+          </section>
+          <section class="slider-section">
+            <img src="img/6a.jpg">
+          </section>
+        </div>
+        <div class="btn-left"><i class="fa-solid fa-circle-chevron-left"></i></div>
+        <div class="btn-right"><i class="fa-solid fa-circle-chevron-right"></i></div>
+      </div>
+    </div>
+  </div>
+    <!-- /* ///////////////// FIN de Carrousel ::::::::::::::::::::::::::: */ -->
+
+
+
+    <!-- /* ///////////////// REGALOS + MODAL::::::::::::::::::::::::::: */ -->
+    <div class="regalos">
+      <div class="regalos__detalle">
+        <img src="./img/regalo-02.png" alt="regalos" class="regalos__img">
+        <p class="regalos__texto">Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...</p>
+        <button class="regalos__boton" id="openModal">Ver datos</button>
+        <div id="modal" class="modal-container">
+          <div class="modal-content">
+            <h4>DATOS BANCARIOS</h4>
+            <p class="datos">
+              Nombre del Titular: Nombre Apellido<br>
+              CBU: 123456789101<br>
+              Alias: Juan.Medina<br>
+              DNI: 32.847.785<br>
+              Banco Galicia</p>
+            <div id="close" class="close">Cerrar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /* /////////////////FIN REGALOS::::::::::::::::::::::::::: */ -->
+
+
+    <div class="formulario">
+      <p class="formulario__titulo">CONFIRMACIÓN DE ASISTENCIA</p>
+      <img src="./img/list-02.png" alt="formulario" class="formulario__img">
+      <p class="formulario__texto">Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!</p>
+      <a href="https://forms.gle/BedwP6J2fymMDkwc7" target="_blank">
+        <button class="regalos__boton">Confirmar Asistencia</button> </a>
+    </div>
+
+    <!-- //////////////////////////ASISTENCIA FORMULARIO:::::::::::::::::::::::: -->
+
+    <!-- <section class="contacto">
+        <h5>Confirmá tu Asistencia</h5>
+    
+        <form action="index.php" method="POST">
+    
+          <div class="datos-form">
+            <div class="nombre">
+              <label for="nombre">Nombre/s</label>
+              <input type="text" name="nombre" id="nombre" placeholder="nombre">
+            </div>
+    
+            <div class="invitados">
+              <label for="invitados">Numero de Invitados</label>
+              <input type="number" name="invitados" id="invitados" placeholder="0">
+            </div>
+          </div>
+    
+          <div class="cena">
+            <label for="cena">Restricción Dietética</label>
+            <input type="text" name="cena" id="cena" placeholder="celiaco - vegano - vegetariano - alergias">
+          </div>
+    
+    
+          <div class="mensaje">
+            <label for="mensaje">Comentarios o Preguntas</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="4" placeholder="Mensaje"></textarea>
+          </div>
+    
+          <div class="boton-formulario">
+            <a href="#" class="boton-saber-mas">Enviar</a>
+          </div>
+        </form>
+      </section> -->
+
+    <footer class="footer">
+      <p class="footer__texto">Todos los derechos reservados <br> JM Diseño y Desarrollo Web</p>
+    </footer>
+    <!-- JS Carrousel----------------------------------------------------------- -->
+    <script src="./js/script.js"></script>
+    <!-- LINK MODAL DATOS BANCARIOS -->
+    <script src="./js/modal.js"></script>
+    <!-- LINK CUENTA REGRESIVA -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
