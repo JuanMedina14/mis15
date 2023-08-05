@@ -688,9 +688,12 @@ form textarea:focus {
 
 
   main {
-    height: 30vh;
+    height: 20vh;
   }
 
+  .countdown{
+    width: 80%;
+  }
 
   h2 {
     font-size: 2rem;
@@ -698,9 +701,13 @@ form textarea:focus {
   }
 
   .back {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
+
+  #days, #hours, #min, #sec{
+    font-size: 1.5rem;
+  }
 
   .boton--rose{
     display: none;
@@ -712,7 +719,7 @@ form textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 20px;
+    padding-top: 115px;
     height: 450px;
     row-gap: 3%;
   }
@@ -764,6 +771,10 @@ form textarea:focus {
   }
 
   /* ::::::::::::::::::::: FIN SLIDER:::::::::::::: */
+  .regalos{
+    height: 430px;
+  }
+
 
   .regalos__texto {
     text-align: center;
