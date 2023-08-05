@@ -1,9 +1,12 @@
+
+ // JS DE CUENTA REGRESIVA ::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 const days = document.getElementById("days"),
       hours = document.getElementById("hours"),
       min = document.getElementById("min"),
       sec = document.getElementById("sec");
 
-      const navidad = new Date("January 14, 2024 00:00:00") .getTime();
+      const navidad = new Date("December 25, 2023 00:00:00") .getTime();
 
     setInterval(()=> {
         
@@ -38,7 +41,7 @@ const days = document.getElementById("days"),
 
 
 
-
+    // JS DEL SLIDER ::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
     
     const btnLeft = document.querySelector(".btn-left"),
